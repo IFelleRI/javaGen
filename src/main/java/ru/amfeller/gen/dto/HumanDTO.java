@@ -52,6 +52,7 @@ public class HumanDTO {
                 "name='" + name + '\'' +
                 ", address=" + address +
                 ", birthday='" + birthday + '\'' +
+                ", passport=" + passport +
                 '}';
     }
 }

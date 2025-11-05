@@ -6,7 +6,7 @@ import ru.amfeller.gen.entities.Human;
 
 import java.util.Random;
 
-public class HumanConnector implements Connector<Human,Integer> {
+public class HumanConnector implements Connector<Human, Integer> {
     DataBase<Human> database = new DataBase<>();
     int idCounter = 1;
 

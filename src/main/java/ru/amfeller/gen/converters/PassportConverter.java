@@ -1,5 +1,6 @@
-package ru.amfeller.gen.dto;
+package ru.amfeller.gen.converters;
 
+import ru.amfeller.gen.dto.PassportDTO;
 import ru.amfeller.gen.entities.Passport;
 
 public class PassportConverter {

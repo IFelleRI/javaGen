@@ -1,5 +1,6 @@
-package ru.amfeller.gen.dto;
+package ru.amfeller.gen.converters;
 
+import ru.amfeller.gen.dto.HumanDTO;
 import ru.amfeller.gen.entities.Human;
 
 public class HumanConverter {

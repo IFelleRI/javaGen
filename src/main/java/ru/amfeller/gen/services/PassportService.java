@@ -1,14 +1,14 @@
 package ru.amfeller.gen.services;
 
 import ru.amfeller.gen.connectors.Connector;
-import ru.amfeller.gen.dto.PassportConverter;
+import ru.amfeller.gen.converters.PassportConverter;
 import ru.amfeller.gen.dto.PassportDTO;
 import ru.amfeller.gen.entities.Passport;
 
-public class PassportService implements Service<Passport, PassportDTO,String>{
-    Connector<Passport,String> connector;
+public class PassportService implements Service<Passport, PassportDTO, String> {
+    Connector<Passport, String> connector;
 
-    public PassportService(Connector<Passport,String> connector) {
+    public PassportService(Connector<Passport, String> connector) {
         this.connector = connector;
     }
 

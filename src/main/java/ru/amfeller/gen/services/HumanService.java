@@ -1,12 +1,14 @@
 package ru.amfeller.gen.services;
 
 import ru.amfeller.gen.connectors.Connector;
-import ru.amfeller.gen.dto.HumanConverter;
+import ru.amfeller.gen.converters.HumanConverter;
 import ru.amfeller.gen.dto.HumanDTO;
 import ru.amfeller.gen.entities.Human;
+import ru.amfeller.gen.entities.Passport;
 
 public class HumanService implements Service<Human, HumanDTO, Integer> {
     private Connector<Human, Integer> humanConnector;
+    private Connector<Passport, String> passportConnector;
 
     public HumanService(Connector<Human, Integer> humanConnector) {
         this.humanConnector = humanConnector;

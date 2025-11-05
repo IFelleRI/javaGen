@@ -5,13 +5,13 @@ import ru.amfeller.gen.entities.Passport;
 
 import java.util.Random;
 
-public class PassportConnector implements Connector<Passport,String> {
+public class PassportConnector implements Connector<Passport, String> {
     DataBase<Passport> database = new DataBase<>();
     int idCounter = 1;
 
     @Override
     public Passport saveOne(Passport entity) {
-        entity.id = "P_"+idCounter++;
+        entity.id = "P_" + idCounter++;
         if (database.storage == null) {
             database.storage = new Passport[]{entity};
             return entity;
